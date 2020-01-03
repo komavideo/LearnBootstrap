@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小马视频－模态窗体表示</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <div class="container" style="margin-top:30px;">
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal1">
+          打开模态窗体
+        </button>
+        
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">标题部</h4>
+              </div>
+              <div class="modal-body">
+                这里是正文！
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal2">
+          打开网格窗体
+        </button>
+        
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">窗体标题</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-4">.col-sm-4</div>
+                  <div class="col-sm-4 col-sm-offset-4">.sm-4 .sm-offset-4</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3 col-sm-offset-3">.sm-3 .sm-offset-3</div>
+                  <div class="col-sm-2 col-sm-offset-4">.sm-2 .sm-offset-4</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-sm-offset-3">.sm-6 .sm-offset-3</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-9">
+                    Level 1: .sm-9
+                    <div class="row">
+                      <div class="col-xs-8 col-sm-6">
+                        Level 2: .xs-8 .sm-6
+                      </div>
+                      <div class="col-xs-4 col-sm-6">
+                        Level 2: .xs-4 .sm-6
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">保存</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+</body>
+</html>
+
+<!--
+
+
+
+-->
