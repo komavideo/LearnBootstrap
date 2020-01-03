@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小马视频－Tab标签页</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container" style="margin-top:30px;">
+
+        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">首页</a></li>
+            <li role="presentation"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">新闻</a></li>
+            <li role="presentation"><a href="#money" aria-controls="money" role="tab" data-toggle="tab">财经</a></li>
+            <li role="presentation"><a href="#ent" aria-controls="ent" role="tab" data-toggle="tab">娱乐</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="home">首页内容</div>
+            <div role="tabpanel" class="tab-pane fade" id="news">新闻内容</div>
+            <div role="tabpanel" class="tab-pane fade" id="money">财经内容</div>
+            <div role="tabpanel" class="tab-pane fade" id="ent">娱乐内容</div>
+        </div>
+        
+        <hr/>
+        <button id="btnHome" class="btn btn-default">首页</button>
+        <button id="btnNews" class="btn btn-success">新闻</button>
+        <button id="btnMoney" class="btn btn-warning">财经</button>
+        <button id="btnEnt" class="btn btn-danger">娱乐</button>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        $(function() {
+            $("#btnHome").click(function(){
+                $('#myTabs a:first').tab('show'); //首页
+            });
+            $("#btnNews").click(function(){
+                $('#myTabs li:eq(1) a').tab('show'); //新闻
+            });
+            $("#btnMoney").click(function(){
+                $('#myTabs a[href="#money"]').tab('show'); //财经
+            });
+            $("#btnEnt").click(function(){
+                $('#myTabs a:last').tab('show'); //娱乐
+            });
+        });
+    </script>
+    
+</body>
+</html>
